@@ -1,23 +1,54 @@
-* {
-  font-family: sans-serif;
+body {
+    background-color: aqua;
 }
-input,
-button {
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
+
+.heading h1 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-style: Helvetica;
+    padding-top: 1rem;
 }
+
+.App {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 19%;
+    margin-bottom: 19%;
+    background-color: aquamarine;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.form p {
+    font-size: large;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.App input {
+    padding: 1rem;
+    background-color: rgb(66, 177, 93);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.basic button {
+    width: 60px;
+}
+
+.resat button {
+    width: 170px;
+}
+
 input {
-  display: block;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
-button {
-  border: 1px solid gray;
-  background: whitesmoke;
-  margin-right: 5px;
-}
-button:nth-last-child(2),
-button:nth-last-child(1) {
-  background: tomato;
-  color: white;
+
+.form button {
+    margin: 1.5rem;
+    background-color: rgb(201, 201, 86);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
 }
