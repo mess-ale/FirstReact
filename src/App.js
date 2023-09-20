@@ -28,7 +28,7 @@ function App() {
  
   function resetInput(e) {
     e.preventDefault();  
-    inputRef.current.value = 0;
+    inputRef.current.value = "";
   }; 
  
   function resetResult(e) {
@@ -43,14 +43,16 @@ function App() {
       </div> 
       <form> 
         <p ref={resultRef}> 
-          {result} 
+        result = {result} 
         </p> 
-        <input
-          pattern="[0-9]" 
-          ref={inputRef} 
-          type="number" 
-          placeholder="Type a number" 
-        /> 
+        <div className="input">
+          <input
+            pattern="[0-9]" 
+            ref={inputRef} 
+            type="number" 
+            placeholder="Type a number" 
+          /> 
+        </div>
         <button onClick={plus}>add</button> 
         <button onClick={minus}>subtract</button> 
         <button onClick={times}>multiply</button> 
